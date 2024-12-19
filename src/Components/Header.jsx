@@ -80,11 +80,11 @@ const [date, setDate ] = useState('')
       </div> 
       <div className='border-b bg-slate-400' />
       
-      {isToggle ? <Todo isToggle={isToggle} setIsToggle={setIsToggle} setTodo={setTodo} title={title} setTitle={setTitle} description={description} setDescription={setDescription} date={date} setDate={setDate} handleSubmit={handleSubmit} handleChangeDate={handleChangeDate} handleChangeDescription={handleChangeDescription} handleOnchangeTitle={handleOnchangeTitle} /> : <div className='grid sm:grid-col-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 my-4'>
+      {isToggle ? <Todo isToggle={isToggle} setIsToggle={setIsToggle} setTodo={setTodo} title={title} setTitle={setTitle} description={description} setDescription={setDescription} date={date} setDate={setDate} handleSubmit={handleSubmit} handleChangeDate={handleChangeDate} handleChangeDescription={handleChangeDescription} handleOnchangeTitle={handleOnchangeTitle} /> : <div className='grid grid-cols-1 md:grid-cols-3 gap-y-2 lg:grid-cols-5 my-4 p-3' >
 {todo.map(item => (
-  <div key={item.id} className=' text-white w-full h-24 m-4 '>
+  <div key={item.id} className=' text-white w-full h-24 m-4 flex justify-center '>
     
-    <div className='shadow-lg w-[180px] sm:w-[200px] sm:h-[180px] h-[120px] rounded-md bg-gray-600 p-2 relative' >
+    <div className='shadow-lg w-[180px]  h-[120px] rounded-md bg-gray-600 p-2 relative' >
     <button onClick={handleClose} className='absolute top-1 right-3 font-semibold text-red-400'>x</button>
     
       <p className='font-bold mt-6 '>{item.title} </p>
