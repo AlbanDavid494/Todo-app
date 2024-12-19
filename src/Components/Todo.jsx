@@ -11,8 +11,8 @@ const Todo = ({ handleOnchangeTitle, handleChangeDescription, handleChangeDate, 
 
   return (
     <section>
-    <div className='flex justify-center absolute bg-slate-900 right-96 mt-16 rounded-sm'>
-        <form onSubmit= {handleSubmit} className='max-w-5xl mx-auto px-10 py-5 text-white '>
+    <div className='flex justify-center mt-16 rounded-sm mx-auto'>
+        <form onSubmit= {handleSubmit} className='max-w-5xl px-10 rounded-lg py-5 mb-4 text-white bg-slate-900  '>
       <h3 className='text-lg font-semibold uppercase leading-7'>Add New Task</h3>
       <div className='border-b border-b-white/10 pt-2' />
 <div className='mt-2 grid grid-cols-1 gap-y-2 gap-x-6'>
