@@ -84,7 +84,7 @@ const [date, setDate ] = useState('')
 {todo.map(item => (
   <div key={item.id} className=' text-white w-full h-24 m-4 flex justify-center '>
     
-    <div className='shadow-lg w-[180px]  h-[120px] rounded-md bg-gray-600 p-2 relative' >
+    <div className='shadow-lg w-[180px]  h-[120px] rounded-md bg-white/5 p-2 relative ring-1' >
     <button onClick={handleClose} className='absolute top-1 right-3 font-semibold text-red-400'>x</button>
     
       <p className='font-bold mt-6 '>{item.title} </p>
