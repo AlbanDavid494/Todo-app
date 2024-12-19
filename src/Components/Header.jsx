@@ -80,7 +80,7 @@ const [date, setDate ] = useState('')
       </div> 
       <div className='border-b bg-slate-400' />
       
-      {isToggle ? <Todo isToggle={isToggle} setIsToggle={setIsToggle} setTodo={setTodo} title={title} setTitle={setTitle} description={description} setDescription={setDescription} date={date} setDate={setDate} handleSubmit={handleSubmit} handleChangeDate={handleChangeDate} handleChangeDescription={handleChangeDescription} handleOnchangeTitle={handleOnchangeTitle} /> : <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 my-4'>
+      {isToggle ? <Todo isToggle={isToggle} setIsToggle={setIsToggle} setTodo={setTodo} title={title} setTitle={setTitle} description={description} setDescription={setDescription} date={date} setDate={setDate} handleSubmit={handleSubmit} handleChangeDate={handleChangeDate} handleChangeDescription={handleChangeDescription} handleOnchangeTitle={handleOnchangeTitle} /> : <div className='grid sm:grid-col-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 my-4'>
 {todo.map(item => (
   <div key={item.id} className=' text-white w-full h-24 m-4 '>
     
