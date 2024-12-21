@@ -11,9 +11,10 @@ const Header = () => {
   let id = forgedId
   
   const retrievedValue = localStorage.getItem('todo')
+  const parsedValue = JSON.parse(retrievedValue)
   console.log(retrievedValue)
   
-  const [todo, setTodo] = useState([])
+  const [todo, setTodo] = useState(parsedValue)
 
 
   const [title, setTitle] = useState('')
@@ -26,12 +27,7 @@ const [date, setDate ] = useState('')
 
   useEffect(()=>{
    localStorage.setItem('todo', JSON.stringify(todo))
-   
-  
-
   console.log(todo);
-
-  
   },[todo])  
 
   const handleClick = () => {
